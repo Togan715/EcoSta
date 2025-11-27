@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoSta – Sustainable Dining for a Greener Future</title>
+  <meta name="description" content="Experience local, eco-friendly meals made fresh. Reserve a table or order online at EcoSta." />
+  <meta name="theme-color" content="#2f7a4b" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EcoSta – Sustainable Dining for a Greener Future" />
+  <meta property="og:description" content="Fresh, local and low-carbon meals. Reserve or order online." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://username.github.io/ecosta-site/" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">EcoSta</a>
+      <nav id="main-nav" class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#reserve">Reserve</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Dine Fresh. Dine Local. Dine with Purpose.</h1>
+          <p>EcoSta blends farm-to-table flavours with zero-waste practice. Healthy meals, transparent sourcing, and rewards for sustainable choices.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#reserve">Reserve a Table</a>
+            <a class="btn outline" href="#menu">Explore Menu</a>
+          </div>
+          <p class="social-proof">Trusted by <strong>2,000+</strong> eco-focused diners • Rated <strong>4.9/5</strong></p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-plate.jpg" alt="EcoSta seasonal dish – fresh, local ingredients" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="container section">
+      <h2>Menu Highlights</h2>
+      <p class="lead">Fresh, seasonal dishes with eco-impact scores to guide your choices.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/dish1.jpg" alt="Seasonal salad" />
+          <h3>Seasonal Green Bowl</h3>
+          <p>Local greens, roasted vegetables, seed dressing.</p>
+          <div class="meta">
+            <span class="eco-score eco-low">Eco-score: Low</span>
+            <button class="btn small add-order" data-item="Seasonal Green Bowl">Add to Order</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/dish2.jpg" alt="Plant-based burger" />
+          <h3>Local Veg Burger</h3>
+          <p>Bean patty, house pickles, whole grain bun.</p>
+          <div class="meta">
+            <span class="eco-score eco-medium">Eco-score: Medium</span>
+            <button class="btn small add-order" data-item="Local Veg Burger">Add to Order</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/dish3.jpg" alt="Low carbon entree" />
+          <h3>Herb Roasted Veg Platter</h3>
+          <p>Root vegetables with seasonal herbs and compostable sides.</p>
+          <div class="meta">
+            <span class="eco-score eco-low">Eco-score: Low</span>
+            <button class="btn small add-order" data-item="Herb Roasted Veg Platter">Add to Order</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reserve / Order -->
+    <section id="reserve" class="container section alt">
+      <h2>Reserve or Order</h2>
+      <div class="grid">
+        <form id="reserve-form" class="form-card" aria-label="Reserve a table">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <label for="date">Date & time</label>
+          <input id="date" name="date" type="datetime-local" required />
+          <label for="notes">Notes (opt-in reusable container)</label>
+          <textarea id="notes" name="notes" placeholder="I will bring a reusable container..."></textarea>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Confirm Reservation</button>
+          </div>
+        </form>
+
+        <div class="order-card">
+          <h3>Your Eco Order</h3>
+          <ul id="order-list" class="order-list"><li>No items yet</li></ul>
+          <p id="eco-points">Eco Points: <strong>0</strong></p>
+          <button id="checkout" class="btn outline">Checkout (Demo)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="container section">
+      <h2>Your Dashboard</h2>
+      <p class="lead">Track your eco-impact, rewards and milestones.</p>
+      <div class="dashboard">
+        <div class="stat">
+          <h3 id="carbon-saved">Carbon Saved</h3>
+          <p><strong>0 kg</strong></p>
+        </div>
+        <div class="stat">
+          <h3>Eco Points</h3>
+          <p><strong id="points-display">0</strong></p>
+        </div>
+        <div class="stat">
+          <h3>Local Meals Supported</h3>
+          <p><strong id="meals-supported">0</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="container section alt">
+      <h2>EcoSta Blog</h2>
+      <article class="blog-card">
+        <h3>How We Work with Local Farms</h3>
+        <p>Short excerpt about supply chain traceability, composting, and seasonal menus.</p>
+        <a href="#" class="btn small">Read more</a>
+      </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section">
+      <h2>Contact & Locations</h2>
+      <p>Find us in city centre: 123 Green Lane — Open daily 08:00–22:00</p>
+      <p>Email: <a href="mailto:hello@ecosta.example">hello@ecosta.example</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> EcoSta. All rights reserved.</div>
+      <div class="credits">Built as course prototype. <a href="#privacy">Privacy</a></div>
+    </div>
+  </footer>
+
+  <!-- Cookie consent -->
+  <div id="cookie-consent" class="cookie-consent" role="dialog" aria-live="polite">
+    <p>We use cookies for analytics and to improve your experience. You can opt out in settings.</p>
+    <button id="accept-cookies" class="btn small">Accept</button>
+    <button id="decline-cookies" class="btn small outline">Decline</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
